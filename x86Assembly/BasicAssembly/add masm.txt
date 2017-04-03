@@ -1,0 +1,3 @@
+project->menu->build dependencies->build customizations
+
+check masm
