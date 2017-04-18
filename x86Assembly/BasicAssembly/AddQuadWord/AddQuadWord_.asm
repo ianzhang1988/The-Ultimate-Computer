@@ -17,7 +17,7 @@ AddQuadWord_ proc
 
 	mov ecx, dword ptr [ebx+4]
 
-	；32位模式加64位的原理，在高位上面加低位的进位，如果有128位的加法也是同理的
+	; 32位模式加64位的原理，在高位上面加低位的进位，如果有128位的加法也是同理的
 	adc dword ptr [eax+4], ecx
 	
 	pop ebx
