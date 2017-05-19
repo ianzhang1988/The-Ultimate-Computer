@@ -122,6 +122,7 @@ BadArg:
 	xor eax, eax
 
 Done:
+	vzeroupper	 ; 防止avx到see切换可能造成的性能损失
 	pop ebp
 	ret
 
