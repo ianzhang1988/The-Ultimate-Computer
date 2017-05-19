@@ -76,9 +76,6 @@ SseSfpParallelograms_ proc
 	fstp real8 ptr [ebp-8] ; [ebp-8] sin(alpha)
 	add esp, 8 ; 恢复调用使用的栈
 
-	movsd xmm0, real8 ptr [ebp-16]
-	movsd xmm0, real8 ptr [ebp-8]
-
 	pop edx
 	movsd xmm0, real8 ptr [edx + Parallelograms.A]
 	mulsd xmm0, real8 ptr [ebp-8] ; H
