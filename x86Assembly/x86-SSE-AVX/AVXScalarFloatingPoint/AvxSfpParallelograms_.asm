@@ -105,8 +105,6 @@ AvxSfpParallelograms_ proc
 	mov dword ptr [edx+Parallelograms.BadVal], 0 ; 计算没有问题
 
 Done:
-	vzeroupper ; 清空ymm高128位，避免avx到see潜在的切换
-	
 	mov esp, ebp
 	pop ebp
 	ret
